@@ -1,5 +1,7 @@
 package cloud.docsclient.hotdoctor.plugin.mysqlpapibridge.connections.process;
 
+import org.bukkit.OfflinePlayer;
+
 import cloud.docsclient.hotdoctor.plugin.mysqlpapibridge.database.RAMDatabase;
 import cloud.docsclient.hotdoctor.plugin.mysqlpapibridge.utils.Identifier;
 
@@ -15,6 +17,6 @@ public abstract class DataBridge {
 		return database;
 	}
 	
-	public abstract void run();
+	public abstract void run(OfflinePlayer p);
 
 }
