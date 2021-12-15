@@ -13,13 +13,10 @@ public class AsyncPreprocessIdentifierCompleteTaskEvent extends Event implements
 	
 	private OfflinePlayer player;
 	private Identifier identifier;
-	@SuppressWarnings("unused")
-	private BridgePlugin plugin;
 	
 	public AsyncPreprocessIdentifierCompleteTaskEvent(OfflinePlayer player, Identifier identifier, BridgePlugin plugin) {
 		this.player = player;
 		this.identifier = identifier;
-		this.plugin = plugin;
 	}
 	@Override
 	public boolean isCancelled() {

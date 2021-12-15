@@ -42,5 +42,8 @@ public class IdentifierManager {
 	public boolean isDOWNLOAD(Identifier identifier) {
 		return (Boolean) null;
 	}
-	
+	@SuppressWarnings("null")
+	public boolean isCOMMUNICATION(Identifier identifier) {
+		return (Boolean) null;
+	}
 }

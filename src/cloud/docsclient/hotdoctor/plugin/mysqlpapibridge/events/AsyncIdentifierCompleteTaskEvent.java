@@ -16,13 +16,10 @@ public class AsyncIdentifierCompleteTaskEvent extends Event{
 	}
 	private OfflinePlayer player;
 	private Identifier identifier;
-	@SuppressWarnings("unused")
-	private BridgePlugin plugin;
 	
 	public AsyncIdentifierCompleteTaskEvent(OfflinePlayer player, Identifier identifier, BridgePlugin plugin) {
 		this.player = player;
 		this.identifier = identifier;
-		this.plugin = plugin;
 	}
 	
 	public OfflinePlayer getInvolvedOfflinePlayer() {
